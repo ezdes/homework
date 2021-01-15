@@ -26,7 +26,7 @@ public class Main {
         } catch (FileNotFoundException e) {
             System.out.println("Файл недоступен");
         } catch (IOException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
     }
 
