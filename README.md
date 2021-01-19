@@ -1,2 +1,2 @@
-# homeworks
-# second_trimester
+# homework30
+# LinkedList
