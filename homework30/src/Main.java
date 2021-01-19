@@ -172,7 +172,7 @@ public class Main {
 
         //Найти оказавшихся рядом кошек и мышек, переместить их в новый LinkedList.
         LinkedList<Animal> newLinkedList = new LinkedList<>();
-        for (int i = 0; i < linkedList.size(); i++) {
+        for (int i = 0; i < linkedList.size() - 1; i++) {
             if (linkedList.get(i) instanceof Cat && linkedList.get(i + 1) instanceof Mouse ||
                     linkedList.get(i) instanceof Mouse && linkedList.get(i + 1) instanceof Cat) {
                 newLinkedList.add(linkedList.get(i));
