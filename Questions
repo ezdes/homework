@@ -5,16 +5,16 @@
 3. Нпр
  public class Word 
 	public static final String WORD_ONE = 1;
-		 public static final String WORD_TWO = 2;
+        public static final String WORD_TWO = 2;
 
-		 public void doSomething(String word){} // в этот метод мы можем передать любую строку
-	                                                //но нам нужно передать только WORD_ONE И WORD_TWO
-	 		                                //в этом нам поможет Enum:
+        public void doSomething(String word){} // в этот метод мы можем передать любую строку
+	                                       //но нам нужно передать только WORD_ONE И WORD_TWO
+	 		                       //в этом нам поможет Enum:
              
-	    public enum Word{ONE, TWO}
+	public enum Word{ONE, TWO}
 		
-	    public void doSomething(Word o){} // сюда можем передать только One и Two
-			                      //использование enum безопаснее
+	public void doSomething(Word o){} // сюда можем передать только One и Two
+			                  //использование enum безопаснее
 
 4. LinkedList:  когда нужно быстро удалять/добавлять элементы в начало или конец
    ArrayList: когда в приоритете доступ по индексу //тесты показывают что ArrayList быстрее когда добавляем элементы в середину	   
