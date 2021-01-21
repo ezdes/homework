@@ -1,33 +1,33 @@
 1. Enum - это специальный класс который представялет набор констант(перечисление.)
 
-2. Нпр:  времена года, дни недели, названия регионов КР.
+2. Нпр  времена года, дни недели, названия регионов КР.
 	
-3. Нпр:
-		public class Word 
-			public static final String WORD_ONE = 1;
-		  public static final String WORD_TWO = 2;
+3. Нпр
+ public class Word 
+	public static final String WORD_ONE = 1;
+		 public static final String WORD_TWO = 2;
 
-			public void doSomething(String word){} // в этот метод мы можем передать любую строку
-	                                           //но нам нужно передать только WORD_ONE И WORD_TWO
-	 		                                       //в этом нам поможет Enum:
+		 public void doSomething(String word){} // в этот метод мы можем передать любую строку
+	                                                //но нам нужно передать только WORD_ONE И WORD_TWO
+	 		                                //в этом нам поможет Enum:
              
 	    public enum Word{ONE, TWO}
 		
-			public void doSomething(Word o){} // сюда можем передать только One и Two
-			                                  //использование enum безопаснее
+	    public void doSomething(Word o){} // сюда можем передать только One и Two
+			                      //использование enum безопаснее
 
-	4. LinkedList:  когда нужно быстро удалять/добавлять элементы в начало или конец.
-	   ArrayList: когда в приоритете доступ по индексу //тесты показывают что ArrayList быстрее когда добавляем элементы в середину
-	   Array: думаю массивы редко используются в разработке потому что массивы близки к низкоуровневому программированию.
-	   Но массивы помогают нам понять как работают списки. И Когда данные имеют фиксированную длину можно использовать массивы.(+алгоритмы поиска и сортировки)
+4. LinkedList:  когда нужно быстро удалять/добавлять элементы в начало или конец
+   ArrayList: когда в приоритете доступ по индексу //тесты показывают что ArrayList быстрее когда добавляем элементы в середину	   
+   Array: думаю массивы редко используются в разработке потому что массивы близки к низкоуровневому программированию.
+   Но массивы помогают нам понять как работают списки. И Когда данные имеют фиксированную длину можно использовать массивы.(+алгоритмы поиска и сортировки)
 
-	5. public enum Seasons{WINTER,  SUMMER, FALL, SPRING} 
-	
-	   Seasons s = Seasons.SUMMER;
+5. public enum Seasons{WINTER,  SUMMER, FALL, SPRING} 
+
+   Seasons s = Seasons.SUMMER;
                           
-	   switch(s){
-		    case WINTER: sout("Damn it's cold outside!"); break;
-	      case FALL: sout(" I needa go to fucking school!"); break;
-		    case SPRING: sout("It's  fucking raining outside!"); break;
-	      case SUMMER: sout("Oh shit i'm dying! Gimme water!");
+   switch(s){
+      case WINTER: sout("Damn it's cold outside!"); break;
+      case FALL: sout(" I needa go to fucking school!"); break;
+      case SPRING: sout("It's  fucking raining outside!"); break;
+      case SUMMER: sout("Oh shit i'm dying! Gimme water!");
  	}
