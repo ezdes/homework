@@ -33,7 +33,7 @@ order by sum(orders.total_amount);
 select customer.id, customer.first_name, round(sum(orders.total_amount), 2) as sum, count(orders.customer_id) as amount
 from orders
 join customer on customer.id = orders.customer_id
-group by customer.id, customer.first_name
+group by customer.id
 having count(orders.customer_id) > 20;
 
 --Найти количество городов в каждой из стран клиентов
