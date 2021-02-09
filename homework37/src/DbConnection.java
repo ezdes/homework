@@ -5,7 +5,7 @@ import java.sql.SQLException;
 public class DbConnection {
     private final String url = "jdbc:postgresql://localhost:5432/homework37";
     private final String user = "postgres";
-    private final String password = "secret";
+    private final String password = "secret"; //fake password
 
     public Connection connect(){
         Connection conn = null;
